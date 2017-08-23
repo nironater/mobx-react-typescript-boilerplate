@@ -6,4 +6,5 @@ import { App } from './app/app';
 import appState from './stores/app';
 
 useStrict(true);
+
 ReactDOM.render(<App appState={appState} />, document.getElementById('root'));

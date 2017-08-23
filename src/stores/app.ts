@@ -15,11 +15,11 @@ class AppState implements IAppState {
         }, 1000);
     }
 
-    @action setTimer(newVal: number) {
+    @action setTimer = (newVal: number): void => {
         this.timer = newVal;
     }
 
-    @action resetTimer() {
+    @action resetTimer = (): void => {
         this.timer = 0;
     }
 }
