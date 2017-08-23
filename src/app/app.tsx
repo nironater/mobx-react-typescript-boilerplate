@@ -10,9 +10,8 @@ import './app.less';
 export class App extends React.Component<{ appState: IAppState }, {}> {
     render() {
         return (
-            <div>
-                <div className="nir-class" />
-                <button onClick={this.onReset}>
+            <div className="app">
+                <button className="reset-btn" onClick={this.onReset}>
                     Seconds passed: {this.props.appState.timer}
                 </button>
                 <DevTools />

@@ -6,7 +6,7 @@ export interface IAppState {
     resetTimer: () => void;
 }
 
-export class AppState implements IAppState {
+class AppState implements IAppState {
     @observable timer = 0;
 
     constructor() {
@@ -23,3 +23,6 @@ export class AppState implements IAppState {
         this.timer = 0;
     }
 }
+
+export const appState: IAppState = new AppState();
+export default appState;
