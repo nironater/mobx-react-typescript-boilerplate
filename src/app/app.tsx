@@ -1,14 +1,13 @@
 import * as React from 'react';
-import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
-import { AppState } from './stores/app';
+import { IAppState } from '../stores/app';
 
-import './index.less';
+import './app.less';
 
 @observer
-export class App extends React.Component<{ appState: AppState }, {}> {
+export class App extends React.Component<{ appState: IAppState }, {}> {
     render() {
         return (
             <div>
