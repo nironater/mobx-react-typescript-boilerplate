@@ -1,6 +1,6 @@
 # React-TypeScript
 
-Minimal boilerplate for a single-page app using MobX, React and TypeScript with TSX.
+Minimal boilerplate for a single-page app using MobX, React, TypeScript with TSX and LESS.
 
 Initial run:
 
